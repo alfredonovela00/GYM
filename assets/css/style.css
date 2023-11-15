@@ -39,8 +39,7 @@ body {
 /*BTN*/
 button {
     border: none;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 10px;
     font-weight: bold;
     width: 200px;
 }
@@ -143,18 +142,24 @@ a:hover {
 }
 
 .texto-hero h1 {
-    font-family: var(--Primary-Font);
+    font-family: var(--Secondary-Font);
     font-size: 2.6rem;
     text-transform: uppercase;
+
 }
 
 .texto-hero h2 {
+    font-size: 1.6rem;
     padding-top: 3%;
+    font-weight: 500;
+    font-family: var(--Secondary-Font);
+    text-transform: uppercase;
 }
 
 .texto-hero h2,
 h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .texto-hero p {
@@ -208,7 +213,15 @@ h3 {
 .hr {
     width: 55px;
     margin-top: 5px;
-    border: 1px solid white;
+    border: 2px solid white;
+}
+
+.hr-train {
+    margin-left: 10%;
+    margin-top: 5px;
+    width: 55px;
+    margin-top: 5px;
+    border: 2px solid white;
 }
 
 .textos-sobre {
@@ -231,11 +244,74 @@ h3 {
     font-size: 1.3rem;
     font-family: var(--Primary-Font);
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .textos-sobre p {
     padding-top: 10px;
     font-weight: 600;
+}
+
+.Train {
+    height: 100vh;
+    background: #2c3e50;
+}
+
+.Train h1 {
+    color: white;
+    padding-left: 10%;
+    padding-top: 30px;
+    font-family: var(--Primary-Font);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.train-box {
+    padding-left: 10%;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.train-img {
+    width: 250px;
+    height: 270px;
+    border: 1px solid white;
+}
+
+.train-info h4 {
+    padding: 10px;
+    color: white;
+    font-family: var(--Primary-Font);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.train-info p {
+    padding-top: 20px;
+    text-align: justify;
+    width: 400px;
+}
+
+.train-info button{
+   margin-top: 20px;
+   width: 150px;
+}
+
+.train-power{
+    background:  url(../images/Card-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.train-vsc{
+    background:  url(../images/Card-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
 
 
