@@ -30,7 +30,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: var(--Seconday-Font);
@@ -90,7 +90,6 @@ a:hover {
     gap: 5px;
     font-size: 1.3rem;
     font-weight: bold;
-    color: black;
 }
 
 
@@ -101,7 +100,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(to left, #2ecc71, #5dade2);
+    background: linear-gradient(to top, #3498db, #2c3e50);
     color: black;
 }
 
@@ -112,11 +111,17 @@ a:hover {
 }
 
 #menu a {
-    text-transform: uppercase;
+    cursor: grab;
     display: block;
     padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+#menu a:hover {
     color: black;
-    font-weight: 500;
+    font-weight: bold;
+    transition: ease-in-out .5s;
 }
 
 #btn-mobile {
@@ -161,12 +166,22 @@ h3 {
     text-transform: uppercase;
     padding: 15px;
     border: none;
-    background: linear-gradient(to left, #2ecc71, #5dade2);
+    background: linear-gradient(to top, #3498db, #2c3e50);
     border-radius: 6px;
-    color: black;
+    color: white;
     font-weight: bold;
     margin-top: 30px;
+    cursor: grab;
 }
+
+.btn-start:hover {
+    color: black;
+    font-weight: bold;
+    transition: ease-in-out .5s;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
 
 .btn-book {
     text-transform: uppercase;
@@ -180,36 +195,47 @@ h3 {
 }
 
 
-#about{
+#about {
     height: 100vh;
-    background: linear-gradient(to right, #3498db, #2c3e50, #2ecc71);
+    background: linear-gradient(to top, #3498db, #2c3e50);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
- 
+
 }
 
-.textos-sobre{
+.hr {
+    width: 55px;
+    margin-top: 5px;
+    border: 1px solid white;
+}
+
+.textos-sobre {
     text-align: justify;
     width: 870px;
 }
 
-.textos-sobre h2{
+.textos-sobre h2 {
+    color: white;
     text-transform: uppercase;
     font-size: 1.7rem;
     padding-top: 30px;
     font-family: var(--Primary-Font);
+
 }
 
-.textos-sobre h4{
-    padding-top: 20px;
+.textos-sobre h4 {
+    color: white;
+    padding-top: 50px;
     font-size: 1.3rem;
     font-family: var(--Primary-Font);
+    font-weight: 500;
 }
 
-.textos-sobre p{
+.textos-sobre p {
     padding-top: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -219,7 +245,7 @@ h3 {
         display: flex;
         align-items: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #menu {
@@ -228,7 +254,7 @@ h3 {
         width: 100%;
         top: 70px;
         right: 0px;
-        background: linear-gradient(to right, #2ecc71, #5dade2);
+        background: linear-gradient(to top, #3498db, #2c3e50);
         transition: 0.6s;
         z-index: 1000;
         height: 0px;
@@ -251,7 +277,7 @@ h3 {
 
     #btn-mobile {
         display: flex;
-        padding: 0.5rem 8rem;
+        padding-left: 200px;
         font-size: 1rem;
         border: none;
         background: none;
