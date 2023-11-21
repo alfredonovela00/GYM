@@ -202,7 +202,7 @@ h3 {
 
 #about {
     height: 100vh;
-    background: linear-gradient(to top, #3498db, #2c3e50);
+    background: linear-gradient(to left, #3498db, #2c3e50);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -222,6 +222,13 @@ h3 {
     width: 55px;
     margin-top: 5px;
     border: 2px solid white;
+}
+
+.hr-team {
+    margin: auto;
+    width: 70px;
+    margin-top: 5px;
+    border: 2px solid #fff;
 }
 
 .textos-sobre {
@@ -252,15 +259,15 @@ h3 {
     font-weight: 600;
 }
 
-.Train {
+#Train {
     height: 100vh;
     background: #2c3e50;
 }
 
-.Train h1 {
+#Train h1 {
     color: white;
     padding-left: 10%;
-    padding-top: 30px;
+    padding-top: 100px;
     font-family: var(--Primary-Font);
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -268,17 +275,17 @@ h3 {
 
 .train-box {
     padding-left: 10%;
-    padding-top: 80px;
+    padding-top: 100px;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .train-img {
     width: 250px;
-    height: 270px;
-    border: 1px solid white;
+    height: 250px;
+    border-radius: 5px;
 }
 
 .train-info h4 {
@@ -293,26 +300,175 @@ h3 {
     padding-top: 20px;
     text-align: justify;
     width: 400px;
+    color: #F5F5DC;
 }
 
-.train-info button{
-   margin-top: 20px;
-   width: 150px;
+.train-img button {
+    padding: 15px;
+    margin-top: 210px;
+    width: 250px;
+    background: linear-gradient(to left, skyblue, #000000);
+    font-weight: bold;
+    font-family: var(--Secondary-Font);
+    font-size: 1.1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: grab;
 }
 
-.train-power{
-    background:  url(../images/Card-2.jpg);
+.train-power {
+    background: url(../images/Card-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.train-vsc{
-    background:  url(../images/Card-3.jpg);
+.train-vsc {
+    background: url(../images/Card-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
+
+.hit-train {
+    background: url(../images/Card-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.train-flex {
+    background: url(../images/Card-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#personal {
+    height: 100vh;
+    background: linear-gradient(to bottom, #1b2530, skyblue);
+}
+
+.personal-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+
+.personal-title h5 {
+    padding-top: 60px;
+    font-family: var(--Primary-Font);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.span-1 {
+    color: black;
+}
+
+.personal-title h1 {
+    font-size: 2.3rem;
+    font-family: var(--Primary-Font);
+    font-weight: bold;
+    text-transform: bold;
+    text-transform: uppercase;
+}
+
+.personal-title p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--Secundary-Font);
+}
+
+.personal-card{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-personal{
+    display: flex;
+    width: 680px;
+    height: 300px;   
+}
+
+.personal-image{
+    width: 490px;
+    height: 300px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.personal-1{
+    background: url(../images/personal-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.personal-2{
+    background: url(../images/personal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center ;
+}
+
+
+.personal-3{
+    background: url(../images/Card-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center ;
+}
+
+.personal-4{
+    background: url(../images/Card-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center ;
+}
+
+.personal-info{
+    background: #2c3e50;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.personal-info h4{
+    font-size: 1.5rem;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+.personal-info p{
+    text-align: justify;
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    font-weight: 200;
+}
+
+#pricing{
+    height: 100vh;
+}
+
+.pircing-info{
+    text-align: center;
+}
+
+.pircing-info h1{
+    padding-top: 60px;
+}
+
+
+
+
 
 
 @media (max-width: 600px) {
@@ -330,7 +486,7 @@ h3 {
         width: 100%;
         top: 70px;
         right: 0px;
-        background: linear-gradient(to top, #3498db, #2c3e50);
+        background: linear-gradient(to bottom, #3498db, #2c3e50);
         transition: 0.6s;
         z-index: 1000;
         height: 0px;
@@ -391,4 +547,150 @@ h3 {
         transform: rotate(-135deg);
         top: -7px;
     }
+
+    .texto-hero {
+       text-align: center;
+       padding-right: 25px;
+    }
+
+    .texto-hero h1 {
+        padding-top: 50%;
+        font-family: var(--Secondary-Font);
+        font-size: 1rem;
+    
+    }
+    
+    .texto-hero h2 {
+        padding-top: 5%;
+        font-weight: 500;
+        font-family: var(--Secondary-Font);
+    }
+    
+    .texto-hero h2,
+    h3 {
+        padding-top: 5%;
+        font-size: 0.96rem;
+        font-weight: 500;
+    }
+    
+    .texto-hero p {
+       
+        padding-top: 20px;
+        font-weight: 400;
+    }
+    
+    .btn-start {
+        text-transform: uppercase;
+        padding: 10px;
+        border: none;
+        background: linear-gradient(to top, #3498db, #2c3e50);
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+        cursor: grab;
+    }
+
+    .textos-sobre {
+        text-align: center;
+        width: 300px;
+    }
+
+   
+    
+    .textos-sobre h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding-top: 30px;
+        font-family: var(--Primary-Font);
+    
+    }
+    
+    .textos-sobre h4 {
+        color: white;
+        font-size: 1rem;
+        font-family: var(--Primary-Font);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+    .textos-sobre p {
+        padding-top: 10px;
+        text-align: justify;
+        font-weight: 600;
+    }
+
+    .img-sobre{
+        display: none;
+    }
+
+    .hr {
+        width: 55px;
+        margin: 5px auto;
+        border: 2px solid white;
+    }
+
+    #about{
+        height: 120vh;
+    }
+
+    #Train {
+        height: 370vh;
+        background: #2c3e50;
+    }
+
+    #Train h1 {
+        color: white;
+        padding-left: 10%;
+        padding-top: 100px;
+        font-family: var(--Primary-Font);
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .train-box {
+        padding-left: 10%;
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        flex-wrap: wrap;
+    }
+    
+    .train-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+    }
+    
+    .train-info h4 {
+        padding: 10px;
+        color: white;
+        font-family: var(--Primary-Font);
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .train-info p {
+
+        font-size: 0.90em;
+        color: #F5F5DC;
+    }
+    
+    .train-img button {
+        padding: 15px;
+        margin-top: 500px;
+        width: 250px;
+        background: linear-gradient(to left, skyblue, #000000);
+        font-weight: bold;
+        font-family: var(--Secondary-Font);
+        font-size: 1.1rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: grab;
+    }
+    
 }
+
+
